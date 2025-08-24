@@ -1,0 +1,32 @@
+package device;
+
+public class Device {
+	    private boolean isOn;
+
+	    public void turnOn() {
+	        isOn = true;
+	        System.out.println("Device is turned ON.");
+	    }
+
+	    public void turnOff() {
+	        isOn = false;
+	        System.out.println("Device is turned OFF.");
+	    }
+
+	    public void getStatus() {
+	        if (isOn) {
+	            System.out.println("Device is currently ON.");
+	        } else {
+	            System.out.println("Device is currently OFF.");
+	        }
+	    }
+	}
+	public class main {
+	    public static void main(String[] args) {
+	        Device myDevice = new Device();
+	        myDevice.turnOn();
+	        myDevice.getStatus();
+	        myDevice.turnOff();
+	        myDevice.getStatus();
+	    }
+	}
